@@ -1,0 +1,98 @@
+{
+    "1" : {
+        "imgURL": "https://swoo.sh/3wYoMab",
+        "name":"Nike Jordan 1",
+        "price":"₹ 14,999",
+        "brand": "Nike"
+    },
+    "2" : {
+        "imgURL": "https://swoo.sh/3qiZZtO",
+        "name":"Nike Sneakers",
+        "price":"₹ 5,779",
+        "brand": "Nike"
+    },
+    "3" : {
+        "imgURL": "https://swoo.sh/3AYgiAP",
+        "name":"Van huesen",
+        "price":"₹ 35,000",
+        "brand": "Van"
+    },
+    "4" : {
+        "imgURL": "https://swoo.sh/3RJ5ddP",
+        "name":"Adidas yeezy",
+        "price":"₹ 6,500",
+        "brand": "Adidas"
+    },
+    "5" : {
+        "imgURL": "https://swoo.sh/3RF32by",
+        "name":"Puma retro force",
+        "price":"₹ 8,999",
+        "brand": "Puma"
+    },
+    "6" : {
+        "imgURL": "https://swoo.sh/3BbQZLN",
+        "name":"Puma Monster back",
+        "price":"₹ 1,259",
+        "brand": "Puma"
+    },
+     "7" : {
+        "imgURL": "https://swoo.sh/3BbTLkg",
+        "name":"H&M Over Powered",
+        "price":"₹ 7,889",
+        "brand": "H&M"
+    },
+     "8" : {
+        "imgURL": "https://swoo.sh/3U9ve84",
+        "name":"Levis Mighty mike",
+        "price":"₹ 6,599",
+        "brand": "Nike"
+    },
+     "9" : {
+        "imgURL": "https://swoo.sh/3qAn5Mv",
+        "name":"Adi777",
+        "price":"₹ 7,899",
+        "brand": "Adidas"
+    },
+     "10" : {
+        "imgURL": "https://swoo.sh/3qiZZtO",
+        "name":"Reebok spikes",
+        "price":"Coming Soon",
+        "brand": "Reebok"
+    },
+    "11" : {
+        "imgURL": "https://bit.ly/3ttDoMC",
+        "name":"Puma Gen-Z",
+        "price":"Coming Soon",
+        "brand": "Puma"
+    },
+     "12" : {
+        "imgURL": "https://swoo.sh/3BbTLkg",
+        "name":"H&M Over Powered",
+        "price":"₹ 7,889",
+        "brand": "H&M"
+    },
+     "13" : {
+        "imgURL": "https://swoo.sh/3U9ve84",
+        "name":"Levis Mighty mike",
+        "price":"₹ 6,599",
+        "brand": "Nike"
+    },
+     "14" : {
+        "imgURL": "https://swoo.sh/3qAn5Mv",
+        "name":"Adi777",
+        "price":"₹ 7,899",
+        "brand": "Adidas"
+    },
+     "15" : {
+        "imgURL": "https://swoo.sh/3qiZZtO",
+        "name":"Reebok spikes",
+        "price":"Coming Soon",
+        "brand": "Reebok"
+    },
+    "16" : {
+        "imgURL": "https://bit.ly/3ttDoMC",
+        "name":"Puma Gen-Z",
+        "price":"Coming Soon",
+        "brand": "Puma"
+    }
+}
