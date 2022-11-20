@@ -1,0 +1,45 @@
+*{
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    border: 1px solid white;
+    background: black;
+}
+body{
+    /* overflow: hidden; */
+}
+img{
+    width: 100%;
+}
+@media screen and (max-width:1280px){
+   
+}
+@media screen and (max-width:1000px){
+    navContent{
+        display: none;
+    }
+    #searchInput{
+        display: none;
+    }
+    #searchIcon{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    #o1{
+        display: none;
+    }
+    #o3{
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+#messages{
+    width: 100vw;
+    position: fixed;
+    bottom: -50px;
+    background-color: rgb(73, 192, 73);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease;
+}

@@ -5,263 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="CSS/body.css">
+    <link rel="stylesheet" href="CSS/messages.css">
+    <link rel="stylesheet" href="CSS/Products.css">
+    <link rel="stylesheet" href="CSS/SideDrawer.css">
+    <link rel="stylesheet" href="CSS/Wishlist.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- CSS link ends  -->
+
+    <!-- icon scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="html" href="index_Profile.html">
+    <!-- icon script ends  -->
+
     <title>The Shoe Store</title>
-    <style>
-        *{
-            cursor: default;
-            padding: 0;
-            margin: 0;
-        }
-        
-        ::-webkit-scrollbar {
-            width: 7px;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            /* border-radius: 10px; */
-            border: 1px solid white;
-            background: black;
-        }
-        body{
-            /* overflow: hidden; */
-        }
-        
-        #sideDrawer{
-            position: fixed;
-            top : 92px;
-            right: -250px;
-            transition: 0.5s ease;
-            border-left: 1px solid gray;
-            
-        }
-        #sideDrawerButton{
-            transition: 0.5s ease;
-        }
-        ul{
-            padding: 10px;
-            height: 95vh;
-        }
-        li{
-            padding: 10px;
-            padding-right: 70px;
-            width: 200px;
-        }
-        
-       
-        details li:hover{
-            background-color: antiquewhite;
-        }
-        #products{
-            transition: 0.5s ease;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(4,1fr);
-            row-gap: 20px;
-            justify-items: center;
-           padding: 0px 25px;
-            /* overflow: scroll; */
-            height: 90vh;
-            padding: 50px;
-        }
-        #products img{
-            width: 18rem;
-        }
-        #products img:hover{
-            border: 1px solid grey;
-            z-index: 100;
-        }
-     
-        .buyBtnTemplate{
-            display: flex;
-            align-items: center;
-            border: 1px solid black;
-            border-radius: 20px;
-        }
-
-        /* wishlist CSS starts*/
-        h5{
-            padding: 40px;
-            font-size: 60px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Times New Roman', Times, serif;
-            background-image: url("wishlist_Background4.jpg");
-            background-size: 100px;
-            text-shadow: 0px 0px 20px black;
-        }
-
-        #wishlist{
-            display: none;
-            transition: 0.5s ease;
-        }
-        
-        #wishlist-products{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            height: 80vh;
-            padding: 80px;
-            overflow: scroll;
-
-        }
-        .wishlist-product{
-            display: flex;
-            height: fit-content;
-            width: 50vw;
-            justify-content: space-around;
-            align-items: center;
-            padding: 20px 0px;
-            border: 1px solid black;
-            border-radius: 15px;
-            margin: 20px;
-        }
-        .wishlist-product p{
-            text-align: center;
-        }
-        .wishlist-product img{
-            width: 200px;
-            height: 200px;
-            border-radius: 15px;
-        }
-        .wishlist-product ion-icon{
-            width: 70px;
-            height: 70px;
-        }
-
-        /* wishlist CSS ends  */
-
-        #messages{
-            width: 100vw;
-            position: fixed;
-            bottom: -50px;
-            background-color: rgb(73, 192, 73);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            transition: 0.5s ease;
-        }
-    </style>
 </head>
 
-<body >
-    <div id = "container" class="main">
-    <!-- offer starts -->
-    <div class="adv flex justify-evenly text-white text-sm bg-black p-1 font-bold font-mono mb-4">
-        <a href="" class="flex items-center hover:text-yellow-400"><ion-icon name="card"></ion-icon>Sign up and get 20% off</a>
-        <a href="" class="flex items-center hover:text-yellow-400"><ion-icon name="cart"></ion-icon>Free delivery on all orders now</a>
-        <a href="" class="flex items-center hover:text-yellow-400">Free returns<ion-icon name="refresh-circle"></ion-icon></a>
-    </div>
-    <!-- offer ends -->
+<body>
+    <div id="container" class="main">
+        <!-- offer starts -->
+        <div class="adv flex justify-evenly text-white leading-3 bg-black p-1 font-bold font-mono mb-4">
+            <a href="" class="flex items-center hover:text-yellow-400" id="o1">
+                <ion-icon name="card"></ion-icon>Sign up and get 20% off
+            </a>
+            <a href="" class="flex items-center hover:text-yellow-400" id="o2">
+                <ion-icon name="cart"></ion-icon>Free delivery on all orders now
+            </a>
+            <a href="" class="flex items-center hover:text-yellow-400" id="o3">Free returns<ion-icon
+                    name="refresh-circle"></ion-icon></a>
+        </div>
+        <!-- offer ends -->
 
-    <!-- navbar starts -->
-    <nav class="flex justify-between h-12 items-center px-6">
-       
-        <div class="flex items-center  font-extrabold"><img class="w-12 h-10" src="https://www.pngitem.com/pimgs/m/5-53700_nike-svg-png-icon-nike-shoe-icon-png.png" alt="">The Shoe Store</div>
-       
-        <div class="flex justify-between w-[38vw] font-semibold">
-            <div class="font-bold"><p onclick="loadProd('')">Home</p></div>
-            <div class="text-red-500"><p onclick="loadProd('nike')">Nike</p></div>
-            <div class="text-orange-500"><p onclick="loadProd('Adidas')">Adidas</p></div>
-            <div class="text-yellow-500"><p onclick="loadProd('puma')">Puma</p></div>
-            <div class="text-green-500"><p onclick="loadProd('Reebok')">Reebok</p></div>
-            <div class="text-blue-500"><p onclick="loadProd('Van')">Van Huesen</p></div>
-            <div class="text-indigo-500"><p onclick="loadProd('Levis')">Levis</p></div>
-            <div class="text-violet-500"><p onclick="loadProd('H&M')">H&M</p></div>
-        </div>
-       
-        <div class="flex font-bold items-center justify-evenly w-[25vw]">
-            <input id="searchInput" class="bg-gray-100 font-light placeholder:text-black py-1 px-2 pr-8 rounded-md" type="text" placeholder="Search">
-            <ion-icon name="search" class="w-6 h-6 ml-[-40px]" onclick="search()"></ion-icon>
-            <a href="index_Profile.html"><ion-icon name="person-circle-outline" class="w-8 h-8 hover:bg-black hover:text-white rounded-[50%]"></ion-icon></a>
-            <ion-icon name="heart-circle" class="w-8 h-8 text-red-600 " onclick="wishlist()"></ion-icon>
-            <a href=""><ion-icon name="bag-handle" class="w-8 h-8 text-green-600"></ion-icon></a>
-            <ion-icon name="options-outline" id = "sideDrawerButton" class="w-8 h-10" onclick="sideDrawer()"></ion-icon>
-        </div>
-    </nav>
-    <!-- navbar ends  -->
-    
-    <hr>
-    <div><img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/beba11dc-27f3-4fac-97cc-560674ebfe6f/nike-just-do-it.png" alt=""></div>
-    <!-- products starts -->
-    <div  id = "products">
-          
-    </div>
-    <!-- Fixed Elements starts -->
-    <div id = "sideDrawer" class="bg-neutral-100 z-20">
-     <ul>
-        <li>
-            <details>
-            <summary>Sort By</summary>
-            <li>Price high to low</li><hr>
-            <li>Price low to high</li><hr>
-            <li>Recommended</li><hr>
-            <li>Newest first</li><hr>
-            </details>
-       </li>
-       <hr>
-       <li>
-       <details>
-        <summary>Shoe type</summary>
-        <li>Sports</li><hr>
-        <li>Running</li><hr>
-        <li>Sneekers</li><hr>
-        <li>High toe</li><hr>
-        <li>Flip flops</li><hr>
-        </details>
-        </li>
+        <!-- navbar starts -->
+        <nav class="flex justify-between h-12 items-center px-5">
+
+            <div class="flex items-center text-sm font-extrabold"><img class="w-12 h-10"
+                    src="https://www.pngitem.com/pimgs/m/5-53700_nike-svg-png-icon-nike-shoe-icon-png.png" alt="">The
+                Shoe Store</div>
+
+            <navContent>
+                <ul class="flex justify-between w-[38vw] font-semibold">
+                    <li class="text-red-500" onclick="loadPage('')">Home</li>
+                    <li class="text-orange-500" onclick="loadPage('Adidas')">Adidas</li>
+                    <li class="text-yellow-500" onclick="loadPage('puma')">Puma</li>
+                    <li class="text-green-500" onclick="loadPage('Reebok')">Reebok</li>
+                    <li class="text-blue-500" onclick="loadPage('Van')">Van Huesen</li>
+                    <li class="text-indigo-500" onclick="loadPage('Levis')">Levis</li>
+                    <li class="text-violet-500" onclick="loadPage('H&M')">H&M</li>
+                </ul>
+            </navContent>
+
+            <div class="flex font-bold items-center justify-evenly w-[300px]">
+                <input id="searchInput" class="bg-gray-100 font-light placeholder:text-black py-1 px-2 pr-8 rounded-md"
+                    type="text" placeholder="Search">
+                <ion-icon id="searchIcon" name="search" class="w-6 h-6 ml-[-40px]" onclick="search()"></ion-icon>
+                <a href="index_Profile.html">
+                    <ion-icon name="person-circle-outline"
+                        class="w-8 h-8 hover:bg-black hover:text-white rounded-[50%]"></ion-icon>
+                </a>
+                <ion-icon name="heart-circle" class="w-[40px] h-[40px] text-red-600 " onclick="wishlist()"></ion-icon>
+                <a href="">
+                    <ion-icon name="bag-handle" class="w-8 h-8 text-green-600"></ion-icon>
+                </a>
+                <ion-icon name="options-outline" id="sideDrawerButton" class="w-8 h-10" onclick="sideDrawer()">
+                </ion-icon>
+            </div>
+        </nav>
+        <!-- navbar ends  -->
+
         <hr>
-        <li>
-            <details>
-             <summary>Size</summary>
-            <li>1</li><hr>
-            <li>2</li><hr>
-            <li>3</li><hr>
-            <li>4</li><hr>
-            <li>5</li><hr>
-            <li>6</li><hr>
-            <li>7</li><hr>
-            <li>8</li><hr>
-            <li>9</li><hr>
-            <li>10</li><hr>
-             </details>
-             </li>
-        <li>Color</li><hr>
-        <li>Pattern</li><hr>
-        <li>Brand</li><hr>
-        <li id = "dl-mode" class="pt-[41vh] flex items-center" ><ion-icon name="log-out-outline" class="w-7 h-7"></ion-icon>My Orders </li><hr>
-     </ul>    
-    </div>
-</div>
+        <div><img id="bannerIMG"
+                src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/beba11dc-27f3-4fac-97cc-560674ebfe6f/nike-just-do-it.png"
+                alt=""></div>
+        <!-- products starts -->
+        <div id="products">
 
-<div id="messages" >
-agsagdgfsd
-</div>
-    <!-- Fixed Elements ends  -->
- 
-    <!-- wishlist starts  -->
-    
-<div id="wishlist">
-    <h5><ion-icon name="heart-circle"></ion-icon>Your Wishlist</h5><hr>
-    <div id="back-home" onclick="home()" class="font-bold">&lt;Back</div>
-    <div class="container">
-        <div id="wishlist-products">
-           
+        </div>
+        <!-- Fixed Elements starts -->
+        <div id="sideDrawer" class="bg-neutral-100 z-20">
+            <ul>
+                <li>
+                    <details>
+                        <summary>Sort By</summary>
+                <li onclick="sort()">Price high to low</li><hr>
+                <li>Price low to high</li><hr>
+                <li>Recommended</li><hr>
+                <li>Newest first</li><hr>
+                </details>
+                </li>
+                <hr>
+                <li>
+                    <details>
+                        <summary>Shoe type</summary>
+                <li>Sports</li><hr>
+                <li>Running</li><hr>
+                <li>Sneekers</li><hr>
+                <li>High toe</li><hr>
+                <li>Flip flops</li><hr>
+                </details>
+                </li>
+                <hr>
+                <li>
+                    <details id="sizeFilter">
+                        <summary>Size</summary>
+
+
+                    </details>
+                </li>
+                <hr>
+                <li>
+                    <details id="colorFilter">
+                        <summary>Colors</summary>
+
+
+                    </details>
+                </li>
+                <hr>
+                <li>Pattern</li><hr>
+                <li>Brand</li><hr>
+                <li id="dl-mode" class="pt-[41vh] flex items-center"><ion-icon name="log-out-outline" class="w-7 h-7"></ion-icon>My Orders</li><hr>
+            </ul>
         </div>
     </div>
-</div>
+
+    <div id="messages">
+        agsagdgfsd
+    </div>
+    <!-- Fixed Elements ends  -->
+
+    <!-- wishlist starts  -->
+
+    <div id="wishlist">
+        <h5>
+            <ion-icon name="heart-circle"></ion-icon>Your Wishlist
+        </h5>
+        <hr>
+        <div id="back-home" onclick="home()" class="font-bold">&lt;Back</div>
+        <div class="container">
+            <div id="wishlist-products">
+
+            </div>
+        </div>
+    </div>
 
     <!-- wishlist ends  -->
 
-<script src="script.js"></script>    
+
+    <script src="JavaScript/MainScript.js"></script>
+    <script src="JavaScript/SideDrawer.js"></script>
+    <script src="JavaScript/SearchBar.js"></script>
+    <script src="JavaScript/WishList.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,26 @@
+{
+    "":{
+        "imgURL" : "https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/beba11dc-27f3-4fac-97cc-560674ebfe6f/nike-just-do-it.png" 
+    },
+    "puma": {
+        "imgURL": "https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~FEB+2022~Outlet~OUTLET-SALE-Banner-desktop-v2.jpg/fmt/jpg/fmt/png"
+    },
+    "adidas": {
+        "imgURL": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enIN/Images/Desk_tcm209-963652.jpg"
+    },
+    "h&m": {
+        "imgURL": "https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~FEB+2022~Outlet~OUTLET-SALE-Banner-desktop-v2.jpg/fmt/jpg/fmt/png"
+    },
+    "reebok": {
+        "imgURL": "https://brand.assets.reebok.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/reebok_enUS/Images/22FW_Answer-DMX-OG_L_WF_Masthead_HP_DT_tcm274-960656.jpg"
+    },
+    "nike": {
+        "imgURL": "https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/80fd8e85-5db5-4231-bbe7-f17dc933b797/nike-just-do-it.jpg"
+    },
+    "levis": {
+        "imgURL": "https://www.levi.in/on/demandware.static/-/Sites-LeviIN-Library/en_IN/dwb97e4171/images/homepage/StripBanners/Horizontal%20Banner/Footwear%20Horizontal%20Bannerdesktopnov.jpg"
+    },
+    "van": {
+        "imgURL": "https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~FEB+2022~Outlet~OUTLET-SALE-Banner-desktop-v2.jpg/fmt/jpg/fmt/png"
+    }
+}
